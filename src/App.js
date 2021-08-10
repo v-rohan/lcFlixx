@@ -1,43 +1,99 @@
+import logo from "../src/media/logo.png";
 import "./App.css";
+import video from "../src/media/video.mp4";
 // test
 function App() {
   return (
-    <ul data-uk-accordion>
-    <li className="uk-open">
-        <a className="uk-accordion-title">Item 1</a>
-        <div className="uk-accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div>
+      <div className="hero uk-section-primary uk-preserve-color">
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+          <nav className="uk-navbar-container">
+            <div className="uk-container uk-container-expand">
+              <div uk-navbar>
+                <ul className="uk-navbar-nav">
+                  <li className="uk-active">
+                    <a href="app.js">
+                      <img className="logo-nav" src={logo} alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-    </li>
-    <li>
-        <a className="uk-accordion-title" >Item 2</a>
-        <div className="uk-accordion-content">
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+        {/* #E30914 */}
+        <video className="vid-hero" autoPlay loop muted>
+          <source src={video} type="video/mp4" />
+        </video>
+        <div className="overlay">
+          <div className="content">
+            <h1>Welcome Heading</h1>
+            <p>
+              {" "}
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit,{" "}
+            </p>
+            <a href="" className="btn-hero">
+              Play <span uk-icon="icon:play"> </span>
+            </a>
+          </div>
+        <div className="rating" >
+          <a href="" uk-icon="icon:play-circle" > 18+</a>
         </div>
-    </li>
-    <li>
-        <a className="uk-accordion-title">Item 3</a>
-        <div className="data-uk-accordion-content">
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
         </div>
-    </li>
-</ul>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code> src / App.js </code> and save to reload.{" "}
-    //     </p>{" "}
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React{" "}
-    //     </a>{" "}
-    //   </header>{" "}
-    // </div>
+      </div>
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris.
+      </p>
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris.
+      </p>
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris.
+      </p>
+
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris.
+      </p>
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris.
+      </p>
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris.
+      </p>
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris.
+      </p>
+    </div>
   );
 }
 
