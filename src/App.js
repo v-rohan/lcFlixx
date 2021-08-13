@@ -1,4 +1,4 @@
-import logo from "../src/media/logo.png";
+import logo from "../src/media/logoRed.png";
 import "./App.css";
 import video from "../src/media/videoo.mp4";
 import Card from "../src/homeCard";
@@ -44,34 +44,133 @@ function App() {
           </div>
         </div>
       </div>
-      <section className="card-sec">
+      <section
+        data-uk-scrollspy="target:.uk-anim; cls: uk-animation-slide-bottom-small; delay: 100; repeat:true;"
+        className="card-sec mob"
+      >
         <p>Series</p>
-
         <div
-          className="uk-grid-match uk-child-width-1-6@s uk-text-center"
-          data-uk-grid
+          className="uk-position-relative uk-visible-toggle uk-light"
+          tabindex="-1"
+          data-uk-slider="center:true"
         >
-          <div className="uk-width-expand@m">
-            <Card pic="https://picsum.photos/200/300?random=1"></Card>
-          </div>
-          <div className="uk-width-expand@m">
-            <Card pic="https://picsum.photos/200/300?random=15"></Card>
-          </div>
-          <div className="uk-width-expand@m">
-            <Card pic="https://picsum.photos/200/300?random=51"></Card>
-          </div>
-          <div className="uk-width-expand@m">
-            <Card pic="https://picsum.photos/200/300?random=91"></Card>
-          </div>
-          <div className="uk-width-expand@m">
-            <Card pic="https://picsum.photos/200/300?random=18"></Card>
-          </div>
-          <div className="uk-width-expand@m">
-            <Card pic="https://picsum.photos/200/300?random=12"></Card>
-          </div>
-          <div className="uk-width-expand@m">
-            <Card pic="https://picsum.photos/200/300?random=21"></Card>
-          </div>
+          <ul className="uk-grid-small uk-slider-items  uk-grid">
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=210"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=21"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=214"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=216"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=213"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=211"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=201"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=41"></Card>
+              </div>
+            </li>
+          </ul>
+          <a
+            className="arrow uk-position-center-left uk-position-small "
+            data-uk-slidenav-previous
+            data-uk-slider-item="previous"
+          ></a>
+          <a
+            className="arrow uk-position-center-right uk-position-small "
+            data-uk-slidenav-next
+            data-uk-slider-item="next"
+          ></a>
+        </div>
+      </section>
+
+      <section
+        data-uk-scrollspy="target:.uk-anim; cls: uk-animation-slide-bottom-small; delay: 100; repeat:true;"
+        className=" abt-sec mob"
+      >
+        <p>Title</p>
+        <div
+          className="uk-position-relative uk-visible-toggle uk-light"
+          tabindex="-1"
+          data-uk-slider
+        >
+          <ul className="uk-grid-small uk-slider-items  uk-grid">
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=21"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=214"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=6"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=216"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=213"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=211"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=201"></Card>
+              </div>
+            </li>
+            <li>
+              <div className="uk-anim uk-panel">
+                <Card pic="https://picsum.photos/200/300?random=41"></Card>
+              </div>
+            </li>
+          </ul>
+          <a
+            className="arrow uk-position-center-left uk-position-small "
+            data-uk-slidenav-previous
+            data-uk-slider-item="previous"
+          ></a>
+          <a
+            className="arrow uk-position-center-right uk-position-small "
+            data-uk-slidenav-next
+            data-uk-slider-item="next"
+          ></a>
         </div>
       </section>
     </div>
