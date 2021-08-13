@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import logo from "../src/media/logoRed.png";
 import "./App.css";
 import video from "../src/media/videoo.mp4";
