@@ -1,0 +1,297 @@
+.App {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border: 100px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #000;
+  border-radius: 100px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #696969;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+html {
+  background-color: #202020;
+  color: #d4d3d6;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-nav {
+  width: 10vw;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background-color: #000;
+}
+
+.hero {
+  /* background-image: url("media/hero.jpg");
+  background-position: top;
+  background-size: cover; */
+  height: 85vh;
+  background-color: transparent;
+}
+
+.vid-hero {
+  height: 85vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.overlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.151), 70%, #000);
+  position: absolute;
+  height: 85vh;
+  width: 90vw;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5vw;
+  /* z-index: -1; */
+}
+
+.overlay .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay .rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.overlay .rating a {
+  text-decoration: none;
+}
+
+.overlay h1 {
+  font-family: 'Bebas Neue';
+  color: #ffffff;
+  font-size: 10vh;
+  width: 80vw;
+  margin: 0;
+}
+
+.overlay p {
+  color: #b8b8b8;
+  font-family: 'open sans';
+  margin: 0;
+  padding: 0;
+  width: 45vw;
+}
+
+.btn-hero {
+  padding: 10px 20px;
+  background-color: #d4d3d65d;
+  border-radius: 7px;
+  margin: 20px 0;
+  width: fit-content;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-hero:hover {
+  background-color: #d4d3d6b9;
+  color: #202020;
+  text-decoration: none;
+}
+
+.btn-hero:active {
+  background-color: #282c34;
+  color: #b8b8b8;
+  text-decoration: none;
+}
+
+.rating a {
+  padding: 10px 20px;
+  background-color: #d4d3d65d;
+  margin: 20px 0;
+  border-left: 2px solid #d4d3d6;
+  width: fit-content;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.homeCard {
+  /* height:250px;
+  width: 170px; */
+  height: 300px !important;
+  width: 200px !important;
+  border-radius: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.4s ease-in-out;
+}
+
+.homeCard:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* .homeCard a{
+  height: 30vh;
+  width: 100%;
+} */
+
+.wrap img {
+  display: flex;
+  justify-content: flex-start;
+  height: 40px;
+  position: absolute;
+  z-index: 3;
+}
+
+.card-sec, .abt-sec {
+  padding: 5px 2vw 2vh;
+}
+
+.card-sec p, .abt-sec p {
+  margin-bottom: 5px;
+}
+
+.abt-sec .homeCard {
+  cursor: default;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 300px;
+  width: 200px; */
+}
+
+.abt-sec .homeCard:hover {
+  transform: none;
+}
+
+a.arrow{
+  background-color: #000;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 150px 10px;
+}
+
+
+/* .mob {
+  display: none;
+} */
+
+/* /
+/
+/
+/
+/
+
+/
+/
+
+
+/
+/
+/
+
+/
+/
+//
+//
+/
+/
+/
+/
+/
+//
+/
+/
+/
+/
+/
+/
+/
+/
+/ */
+
+@media screen and (max-width:640px) {
+  html {
+    overflow-x: hidden;
+  }
+  li.uk-active a {
+    padding-left: 0;
+  }
+  .logo-nav {
+    width: 30vw;
+  }
+  .homeCard {
+    /* height: 35vh; */
+    height: 200px !important;
+    width: 125px !important;
+    border-radius: 2px;
+  }
+  a.arrow{
+    background-color: #000;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px 7px;
+  }
+
+  .vid-hero {
+    height: 100vh;
+    width: 100vw;
+  }
+  .overlay {
+    height: 100vh;
+    width: fit-content;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: 0 7.5vw;
+    /* z-index: -1; */
+  }
+  .overlay .rating {
+    justify-content: flex-start;
+  }
+  .overlay h1 {
+    font-size: 7vh;
+    width: 90vw;
+  }
+  .overlay p {
+    width: 85vw;
+    font-size: 12px;
+  }
+  .btn-hero {
+    padding: 10px 20px;
+    margin: 20px 0;
+  }
+  .rating a {
+    padding: 5px 20px;
+  }
+}
+
