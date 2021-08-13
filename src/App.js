@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import logo from "../src/media/logoRed.png";
 import "./App.css";
-import video from "../src/media/videoo.mp4";
+import video from "../src/media/video3.mp4";
 import Card from "../src/homeCard";
 // test
 function App() {
